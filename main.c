@@ -28,6 +28,23 @@
 
 // Writting a code to add two number in program
 
+// #include <stdio.h>
+
+// int main(){
+//     int a,b,c ;
+//     printf("Enter First number you want to add\n");
+//     scanf("%d", &a );
+//     printf("Enter second number you want to add\n");
+//     scanf("%d", &b );
+//     c = a + b;
+//     printf("Total is: %d", c );
+// return(0);
+// }
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+// Writting a code to subtract two number in program
+
 #include <stdio.h>
 
 int main(){
@@ -36,9 +53,7 @@ int main(){
     scanf("%d", &a );
     printf("Enter second number you want to add\n");
     scanf("%d", &b );
-    c = a + b;
+    c = a - b;
     printf("Total is: %d", c );
 return(0);
 }
-
-/////////////////////////////////////////////////////////////////////////////////////////////
