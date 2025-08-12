@@ -14,13 +14,30 @@
 
 // code to take input from user and print it 
 
+// #include <stdio.h>
+// int main(){
+//     int a , b;
+//     printf("Print two number you want to print \n");
+//     scanf("%d", &a);
+//     scanf("%d", &b);
+//     printf("%d %d ", a , b);
+// return(0);
+// }
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+// Writting a code to add two number in program
+
 #include <stdio.h>
+
 int main(){
-    int a , b;
-    printf("Print two number you want to print \n");
-    scanf("%d", &a);
-    scanf("%d", &b);
-    printf("%d %d ", a , b);
+    int a,b,c ;
+    printf("Enter First number you want to add\n");
+    scanf("%d", &a );
+    printf("Enter second number you want to add\n");
+    scanf("%d", &b );
+    c = a + b;
+    printf("Total is: %d", c );
 return(0);
 }
 
