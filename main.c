@@ -62,17 +62,31 @@
 
 // Writting a code to multiply two number in program
 
+// #include <stdio.h>
+
+// int main(){
+//     int a,b,c ;
+//     printf("Enter First number you want to add\n");
+//     scanf("%d", &a );
+//     printf("Enter second number you want to add\n");
+//     scanf("%d", &b );
+//     c = a * b;
+//     printf("Total is: %d", c );
+// return(0);
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// to print some word like name i.e printing word
+
 #include <stdio.h>
 
 int main(){
-    int a,b,c ;
-    printf("Enter First number you want to add\n");
-    scanf("%d", &a );
-    printf("Enter second number you want to add\n");
-    scanf("%d", &b );
-    c = a * b;
-    printf("Total is: %d", c );
-return(0);
+    char a[100] ;
+    printf("Write Your name i will give you your name in output \n");
+    scanf("%s", &a);
+    printf("%s", a );
+return 0;
 }
 
-/////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
