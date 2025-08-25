@@ -146,17 +146,51 @@
 
 // writing a progrm to check if number is divisible by 3 
 
-#include <stdio.h>
-int main(){
-    int marks;
-    printf("Enter Your marks\n");
-    scanf("%d", &marks);
-    if(marks >= 11 && marks <= 99){
-        printf("Number is greater then 11 and smaller then 99");
-    }
-    else{
-        printf("Number is not between 11 and 99");
-    };
+// #include <stdio.h>
+// int main(){
+//     int marks;
+//     printf("Enter Your marks\n");
+//     scanf("%d", &marks);
+//     if(marks >= 11 && marks <= 99){
+//         printf("Number is greater then 11 and smaller then 99");
+//     }
+//     else{
+//         printf("Number is not between 11 and 99");
+//     };
 
-return 0;
+// return 0;
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// Write a C program that takes hours, minutes and seconds (declare as long int) as input,
+// and calculates the total number of seconds.
+// Expected Output:
+// Input
+// hours: 5
+// minutes: 37
+// seconds: 10
+// Total: 20230 seconds
+
+
+
+#include <stdio.h>
+
+int main(){
+    long int hours, minutes,seconds,total;
+    printf("Enter hours\n");
+    scanf("%d", &hours);
+    printf("Enter minutes\n");
+    scanf("%d", &minutes);
+    printf("Enter seconds\n");
+    scanf("%d", &seconds);
+
+    total = seconds + ( minutes*60 ) + (hours * 60 *60);
+
+    printf("Your total in seconds\n%d", total );
+    
+
+return 0 ;
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
