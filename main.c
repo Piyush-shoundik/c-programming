@@ -79,14 +79,45 @@
 
 // to print some word like name i.e printing word
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main(){
-    char a[100] ;
-    printf("Write Your name i will give you your name in output \n");
-    scanf("%s", &a);
-    printf("%s", a );
-return 0;
-}
+// int main(){
+//     char a[100] ;
+//     printf("Write Your name i will give you your name in output \n");
+//     scanf("%s", &a);
+//     printf("%s", a );
+// return 0;
+// }
 
 //////////////////////////////////////////////////////////////////////////////////////////////
+
+// writing a progrm to print grave of student
+
+#include <stdio.h>
+int main(){
+    int marks;
+    printf("Enter Your marks\n");
+    scanf("%d", &marks);
+    if(marks >= 90 ){
+        printf("You got A+");
+    }
+    if(marks >= 80 && marks <= 89  ){
+        printf("You got A");
+    }
+    if(marks >= 70 && marks <= 79  ){
+        printf("You got A Minor");
+    }
+    if(marks >= 60 && marks <= 79  ){
+        printf("You got B");
+    }
+    if(marks >= 50 && marks <= 59  ){
+        printf("You got C");
+    }
+    if(marks >= 40 && marks <= 49  ){
+        printf("You got D");
+    }
+    if(marks >= 0 && marks <= 39  ){
+        printf("You got E");
+    }
+return 0;
+}
