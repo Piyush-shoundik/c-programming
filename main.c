@@ -93,31 +93,53 @@
 
 // writing a progrm to print grave of student
 
+// #include <stdio.h>
+// int main(){
+//     int marks;
+//     printf("Enter Your marks\n");
+//     scanf("%d", &marks);
+//     if(marks >= 90 ){
+//         printf("You got A+");
+//     }
+//     if(marks >= 80 && marks <= 89  ){
+//         printf("You got A");
+//     }
+//     if(marks >= 70 && marks <= 79  ){
+//         printf("You got A Minor");
+//     }
+//     if(marks >= 60 && marks <= 79  ){
+//         printf("You got B");
+//     }
+//     if(marks >= 50 && marks <= 59  ){
+//         printf("You got C");
+//     }
+//     if(marks >= 40 && marks <= 49  ){
+//         printf("You got D");
+//     }
+//     if(marks >= 0 && marks <= 39  ){
+//         printf("You got E");
+//     }
+// return 0;
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// writing a progrm to check if number is divisible by 3 
+
 #include <stdio.h>
 int main(){
     int marks;
-    printf("Enter Your marks\n");
+    printf("Enter Your Number\n");
     scanf("%d", &marks);
-    if(marks >= 90 ){
-        printf("You got A+");
+    marks = marks % 3;
+    if(marks == 0){
+        printf("Divisible");
     }
-    if(marks >= 80 && marks <= 89  ){
-        printf("You got A");
-    }
-    if(marks >= 70 && marks <= 79  ){
-        printf("You got A Minor");
-    }
-    if(marks >= 60 && marks <= 79  ){
-        printf("You got B");
-    }
-    if(marks >= 50 && marks <= 59  ){
-        printf("You got C");
-    }
-    if(marks >= 40 && marks <= 49  ){
-        printf("You got D");
-    }
-    if(marks >= 0 && marks <= 39  ){
-        printf("You got E");
-    }
+    else{
+        printf("Not divisible");
+    };
+
 return 0;
 }
+
+
