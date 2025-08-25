@@ -126,20 +126,37 @@
 
 // writing a progrm to check if number is divisible by 3 
 
+// #include <stdio.h>
+// int main(){
+//     int marks;
+//     printf("Enter Your Number\n");
+//     scanf("%d", &marks);
+//     marks = marks % 3;
+//     if(marks == 0){
+//         printf("Divisible");
+//     }
+//     else{
+//         printf("Not divisible");
+//     };
+
+// return 0;
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// writing a progrm to check if number is divisible by 3 
+
 #include <stdio.h>
 int main(){
     int marks;
-    printf("Enter Your Number\n");
+    printf("Enter Your marks\n");
     scanf("%d", &marks);
-    marks = marks % 3;
-    if(marks == 0){
-        printf("Divisible");
+    if(marks >= 11 && marks <= 99){
+        printf("Number is greater then 11 and smaller then 99");
     }
     else{
-        printf("Not divisible");
+        printf("Number is not between 11 and 99");
     };
 
 return 0;
 }
-
-
