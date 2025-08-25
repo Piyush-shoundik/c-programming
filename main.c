@@ -173,24 +173,49 @@
 // Total: 20230 seconds
 
 
+// #include <stdio.h>
+
+// int main(){
+//     long int hours, minutes,seconds,total;
+//     printf("Enter hours\n");
+//     scanf("%d", &hours);
+//     printf("Enter minutes\n");
+//     scanf("%d", &minutes);
+//     printf("Enter seconds\n");
+//     scanf("%d", &seconds);
+
+//     total = seconds + ( minutes*60 ) + (hours * 60 *60);
+
+//     printf("Your total in seconds\n%d", total );
+    
+
+// return 0 ;
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// Given the following pseudo code, write a program that executes it.
+// a. read x
+// b. read y
+// c. compute p=x*y
+// d. compute s=x+y
+// e. total=s2+p*(s-x)*(p+y)
+// f. print total
 
 #include <stdio.h>
 
 int main(){
-    long int hours, minutes,seconds,total;
-    printf("Enter hours\n");
-    scanf("%d", &hours);
-    printf("Enter minutes\n");
-    scanf("%d", &minutes);
-    printf("Enter seconds\n");
-    scanf("%d", &seconds);
 
-    total = seconds + ( minutes*60 ) + (hours * 60 *60);
+    int x,y,p,s,total;
 
-    printf("Your total in seconds\n%d", total );
-    
+    printf("Enter your number for X ");
+    scanf("%d", &x);
+    printf("Enter your number for Y ");
+    scanf("%d", &y);
 
-return 0 ;
+    p = x * y;
+    s = x + y;
+
+    total = s * 2 + p* (s-x) * (p+y) ;
+    printf("Your total is \t%d", total );
 }
-
-//////////////////////////////////////////////////////////////////////////////////////////////
