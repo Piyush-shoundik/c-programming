@@ -202,20 +202,49 @@
 // e. total=s2+p*(s-x)*(p+y)
 // f. print total
 
+// #include <stdio.h>
+
+// int main(){
+
+//     int x,y,p,s,total;
+
+//     printf("Enter your number for X ");
+//     scanf("%d", &x);
+//     printf("Enter your number for Y ");
+//     scanf("%d", &y);
+
+//     p = x * y;
+//     s = x + y;
+
+//     total = s * 2 + p* (s-x) * (p+y) ;
+//     printf("Your total is \t%d", total );
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// Given two numbers dividend and divisor, divide two numbers. The result of division should
+// truncate toward zero, which means losing its fractional part. For example, 8.345 would be
+// truncated to 8, and -2.7335 would be truncated to -2. Assume we are dealing with an environment
+// that could store dividend as signed long long integer and divisor as double.
+// Example
+// Input: dividend = 922337203685, divisor = 12.6
+// Output: 73201365371
+
 #include <stdio.h>
 
-int main(){
+int main() {
+    long long dividend,result;
+    double divisor;
 
-    int x,y,p,s,total;
+    printf("Enter dividend: ");
+    scanf("%lld", &dividend);
 
-    printf("Enter your number for X ");
-    scanf("%d", &x);
-    printf("Enter your number for Y ");
-    scanf("%d", &y);
+    printf("Enter divisor: ");
+    scanf("%lf", &divisor);
 
-    p = x * y;
-    s = x + y;
+    
+    result = (int)(dividend / divisor); 
+    printf("Output: %lld\n", result);
 
-    total = s * 2 + p* (s-x) * (p+y) ;
-    printf("Your total is \t%d", total );
+    return 0;
 }
