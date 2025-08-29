@@ -202,20 +202,34 @@
 // e. total=s2+p*(s-x)*(p+y)
 // f. print total
 
+// #include <stdio.h>
+
+// int main(){
+
+//     int x,y,p,s,total;
+
+//     printf("Enter your number for X ");
+//     scanf("%d", &x);
+//     printf("Enter your number for Y ");
+//     scanf("%d", &y);
+
+//     p = x * y;
+//     s = x + y;
+
+//     total = s * 2 + p* (s-x) * (p+y) ;
+//     printf("Your total is \t%d", total );
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// pratice 2 question 4
+
 #include <stdio.h>
-
 int main(){
+    int a = 10, b = 10, c = 3, d;
+    d = a == b && c;
+    a = 4 && -1;
+    printf("output:%d", d );
+    printf("\noutput:%d", a );
 
-    int x,y,p,s,total;
-
-    printf("Enter your number for X ");
-    scanf("%d", &x);
-    printf("Enter your number for Y ");
-    scanf("%d", &y);
-
-    p = x * y;
-    s = x + y;
-
-    total = s * 2 + p* (s-x) * (p+y) ;
-    printf("Your total is \t%d", total );
 }
