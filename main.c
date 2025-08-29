@@ -224,12 +224,22 @@
 
 // pratice 2 question 4
 
+// #include <stdio.h>
+// int main(){
+//     int a = 10, b = 10, c = 3, d;
+//     d = a == b && c;
+//     a = 4 && -1;
+//     printf("output:%d", d );
+//     printf("\noutput:%d", a );
+
+// }
+
+// ii
+
 #include <stdio.h>
 int main(){
-    int a = 10, b = 10, c = 3, d;
-    d = a == b && c;
-    a = 4 && -1;
-    printf("output:%d", d );
-    printf("\noutput:%d", a );
-
+int a = 5, b = 6, c = 7, d = 4, e;
+e = a>b && c>d || a>d;
+printf("\noutput:%d", e );
+return 0;
 }
