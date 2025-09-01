@@ -246,11 +246,32 @@
 
 // part 3 
 
-#include <stdio.h>
-int main(){
-int x=6, y=15;
-int z = x++ < 10 && x + y < 20;
-printf("\noutput:%d", z);
+// #include <stdio.h>
+// int main(){
+// int x=6, y=15;
+// int z = x++ < 10 && x + y < 20;
+// printf("\noutput:%d", z);
 
-return 0;
+// return 0;
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// checking if number is divisible by 3 or not
+
+#include <stdio.h>
+
+int main() {
+    int number;
+
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+
+    if (number % 3 == 0) {
+        printf("%d is divisible by 3.\n", number);
+    } else {
+        printf("%d is not divisible by 3.\n", number);
+    }
+
+    return 0;
 }
