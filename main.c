@@ -259,19 +259,41 @@
 
 // checking if number is divisible by 3 or not
 
+// #include <stdio.h>
+
+// int main() {
+//     int number;
+
+//     printf("Enter an integer: ");
+//     scanf("%d", &number);
+
+//     if (number % 3 == 0) {
+//         printf("%d is divisible by 3.\n", number);
+//     } else {
+//         printf("%d is not divisible by 3.\n", number);
+//     }
+
+//     return 0;
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// write a code to check if a number is even or odd.
+
 #include <stdio.h>
 
-int main() {
-    int number;
+int main(){
+    int n;
 
     printf("Enter an integer: ");
-    scanf("%d", &number);
+    scanf("%d", &n);
 
-    if (number % 3 == 0) {
-        printf("%d is divisible by 3.\n", number);
-    } else {
-        printf("%d is not divisible by 3.\n", number);
+    if(n % 2 == 0 ){
+        printf("%d is even \n", n);
     }
-
-    return 0;
+    else{
+        printf("%d is odd ", n);
+    }
+return 0;
 }
+
