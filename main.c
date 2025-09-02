@@ -316,20 +316,53 @@
 
 // calculate future age by add two years
 
+// #include <stdio.h>
+
+// int main() {
+//     int currentAge, yearsToAdd, futureAge;
+
+//     printf("Enter your current age: ");
+//     scanf("%d", &currentAge);
+
+//     printf("Enter the number of years to add: ");
+//     scanf("%d", &yearsToAdd);
+
+//     futureAge = currentAge + yearsToAdd;
+
+//     printf("After %d years, you will be %d years old.\n", yearsToAdd, futureAge);
+
+//     return 0;
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// assigning grade
+
 #include <stdio.h>
 
 int main() {
-    int currentAge, yearsToAdd, futureAge;
+    int marks;
 
-    printf("Enter your current age: ");
-    scanf("%d", &currentAge);
+    printf("Enter student marks (0-100): ");
+    scanf("%d", &marks);
 
-    printf("Enter the number of years to add: ");
-    scanf("%d", &yearsToAdd);
-
-    futureAge = currentAge + yearsToAdd;
-
-    printf("After %d years, you will be %d years old.\n", yearsToAdd, futureAge);
+    if (marks >= 90 && marks <= 100) {
+        printf("Grade: A+\n");
+    } else if (marks >= 80 && marks < 90) {
+        printf("Grade: A\n");
+    } else if (marks >= 70 && marks < 80) {
+        printf("Grade: A-\n");
+    } else if (marks >= 60 && marks < 70) {
+        printf("Grade: B\n");
+    } else if (marks >= 50 && marks < 60) {
+        printf("Grade: C\n");
+    } else if (marks >= 40 && marks < 50) {
+        printf("Grade: D\n");
+    } else if (marks >= 0 && marks < 40) {
+        printf("Grade: Fail\n");
+    } else {
+        printf("Invalid marks entered.\n");
+    }
 
     return 0;
 }
