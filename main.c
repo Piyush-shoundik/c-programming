@@ -298,16 +298,38 @@
 
 // Write a code to check if a number is greater than 11 and less than 99.
 
+// #include <stdio.h>
+// int main(){
+//     int n;
+//     printf("Enter an integer: ");
+//     scanf("%d", &n);
+//     if(n > 11 && n < 99 ){
+//         printf("%d is number is greater than 11 and less than 99 \n", n);
+//     }
+//     else{
+//         printf("%d is not between 11 and 99 ", n);
+//     }
+// return 0;
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// calculate future age by add two years
+
 #include <stdio.h>
-int main(){
-    int n;
-    printf("Enter an integer: ");
-    scanf("%d", &n);
-    if(n > 11 && n < 99 ){
-        printf("%d is number is greater than 11 and less than 99 \n", n);
-    }
-    else{
-        printf("%d is not between 11 and 99 ", n);
-    }
-return 0;
+
+int main() {
+    int currentAge, yearsToAdd, futureAge;
+
+    printf("Enter your current age: ");
+    scanf("%d", &currentAge);
+
+    printf("Enter the number of years to add: ");
+    scanf("%d", &yearsToAdd);
+
+    futureAge = currentAge + yearsToAdd;
+
+    printf("After %d years, you will be %d years old.\n", yearsToAdd, futureAge);
+
+    return 0;
 }
