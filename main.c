@@ -395,25 +395,37 @@
 
 // to check if number is prime or not
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-    int a, i, flag = 0;
+// int main() {
+//     int a, i, flag = 0;
 
-    printf("Enter your number");
-    scanf("%d", &a);
+//     printf("Enter your number");
+//     scanf("%d", &a);
     
-    for(i = 2; i <= a / 2 ; i++){
-        if(a % i == 0 ){
-            flag = 1;
-            break;
-        }
-    }
-    if (flag == 0 ){
-        printf("Number is prime ");
-    }else {
-        printf("number is not a prime");
-    }
+//     for(i = 2; i <= a / 2 ; i++){
+//         if(a % i == 0 ){
+//             flag = 1;
+//             break;
+//         }
+//     }
+//     if (flag == 0 ){
+//         printf("Number is prime ");
+//     }else {
+//         printf("number is not a prime");
+//     }
 
-return 0;
+// return 0;
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// using ternary operator
+
+#include <stdio.h>
+int main(){
+    int a = 2 , b = 1 , c = 3;
+    (a <= b)? printf("b is greater"):
+    printf("a is greater");
+
 }
