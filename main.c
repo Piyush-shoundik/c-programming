@@ -375,18 +375,45 @@
 
 // Write a C program to check a given number is odd or even using bitwise operators
 
+// #include <stdio.h>
+
+// int main() {
+//     int num;
+
+//     printf("Enter a number: ");
+//     scanf("%d", &num);
+
+//     if (num | 1)
+//         printf("%d is Odd\n", num);
+//     else
+//         printf("%d is Even\n", num);
+
+//     return 0;
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// to check if number is prime or not
+
 #include <stdio.h>
 
 int main() {
-    int num;
+    int a, i, flag = 0;
 
-    printf("Enter a number: ");
-    scanf("%d", &num);
+    printf("Enter your number");
+    scanf("%d", &a);
+    
+    for(i = 2; i <= a / 2 ; i++){
+        if(a % i == 0 ){
+            flag = 1;
+            break;
+        }
+    }
+    if (flag == 0 ){
+        printf("Number is prime ");
+    }else {
+        printf("number is not a prime");
+    }
 
-    if (num | 1)
-        printf("%d is Odd\n", num);
-    else
-        printf("%d is Even\n", num);
-
-    return 0;
+return 0;
 }
